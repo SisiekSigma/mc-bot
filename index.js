@@ -7,10 +7,10 @@ app.listen(process.env.PORT || 8000, () => console.log('Serwer HTTP gotowy'));
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'WPISZ_IP_SERWERA', // np. s1.mchosting.pl (bez portu!)
+    host: 'sigmyzosiedla.mchosting.pl', // np. s1.mchosting.pl (bez portu!)
     port: 25565,              // WPISZ PORT PO DWUKROPKU (same cyfry)
     username: 'BotAFK',       // Nick bota na serwerze
-    version: '1.21.4'         // WPISZ WERSJE MINECRAFTA (np. 1.20.4)
+    version: '1.21.11'         // WPISZ WERSJE MINECRAFTA (np. 1.20.4)
   });
 
   bot.on('spawn', () => {
