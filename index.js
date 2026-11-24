@@ -22,6 +22,7 @@ function createBot() {
   });
 
   bot.on('end', () => {
+      bot.on('kicked', (reason) => console.log('Wyrzucono za:', reason));
     console.log('Rozlaczono. Ponowne laczenie za 10 sekund...');
     setTimeout(createBot, 10000);
   });
